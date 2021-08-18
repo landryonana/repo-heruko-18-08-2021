@@ -21,7 +21,7 @@ paramètres
             </div>
             <div class="col-md-6">
                     <form action="{% url 'accounts:user_edit' %}" method="post" 
-                          enctype="multipart/form-data" id="js_user_form">
+                          enctype="multipart/form-data" id="js_user_form" style="margin-bottom: 75px;">
                         {% csrf_token %}
                         <div class="modal-header">
                             <h4 class="modal-title">Modification sur <b>{{ request.user }}</b></h4>
